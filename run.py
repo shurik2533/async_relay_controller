@@ -9,6 +9,11 @@ PIN = 4
 ON_DELAY = 1.0  # sec
 OFF_DELAY = 12.0  # sec
 
+GPIO.setmode(GPIO.BCM)
+CHANNELS = [PIN]
+[GPIO.setup(channel, GPIO.OUT) for channel in CHANNELS]
+[GPIO.output(channel, GPIO.HIGH) for channel in CHANNELS]
+
 logging.basicConfig(filename='logs/async_relay_controller.log',
                     filemode='a',
                     format='%(asctime)s,%(msecs)d %(message)s',

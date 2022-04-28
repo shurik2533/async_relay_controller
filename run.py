@@ -57,7 +57,7 @@ async def on(pin):
 
 async def off(pin):
     GPIO.output(pin, GPIO.HIGH)
-    await asyncio.sleep(get_off_delay)
+    await asyncio.sleep(get_off_delay())
 
 
 async def main():

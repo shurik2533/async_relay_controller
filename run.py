@@ -7,7 +7,7 @@ import time
 
 
 PIN = 2
-DAY_ON_DELAY = 1.5  # sec
+DAY_ON_DELAY = 1.0  # sec
 DAY_OFF_DELAY = 120.0  # sec
 NIGHT_ON_DELAY = 2  # sec
 NIGHT_OFF_DELAY = 420.0  # sec
